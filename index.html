@@ -683,22 +683,27 @@
             position: relative;
         }
 
+        /* Service Cards Redesign */
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 30px;
+            margin-top: 50px;
         }
 
         .service-card {
-            background: var(--bg-light);
+            background: var(--bg-white);
             border-radius: var(--radius-lg);
-            padding: 40px 30px;
+            padding: 30px;
             text-align: center;
-            transition: var(--transition-smooth);
-            border: 1px solid var(--border-color);
             position: relative;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 1px solid rgba(0, 0, 0, 0.05);
             overflow: hidden;
-            z-index: 1;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .service-card::before {
