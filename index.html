@@ -1,0 +1,2800 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manjula Decorations | Crafting Beautiful Celebrations with Tradition & Style</title>
+    <meta name="description"
+        content="Premium event decoration services in Tirupattur. Specializing in weddings, birthdays, puberty functions, standard & premium setups.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* ========================
+           DESIGN SYSTEM (VARIABLES)
+           ======================== */
+        :root {
+            /* Primary Brand Colors */
+            --primary-blue: #4A90E2;
+            --primary-blue-hover: #357ABD;
+            --primary-maroon: var(--primary-blue);
+            /* Mapped to prevent breaking untargeted elements */
+
+            /* Secondary UI Colors */
+            --secondary-blue: var(--primary-blue);
+            --secondary-blue-hover: var(--primary-blue-hover);
+
+            /* Accent Colors */
+            --accent-pink: #FF6584;
+            --accent-pink-hover: #E85A75;
+
+            /* Premium Accent */
+            --primary-gold: #E6C200;
+
+            /* Base Colors */
+            --bg-light: #F9F9F9;
+            --bg-white: #FFFFFF;
+            --bg-dark: #1A1A1A;
+            --text-dark: #222222;
+            --text-light: #666666;
+            --text-white: #FFFFFF;
+            --border-color: #F0F4F8;
+            /* Brighter neutral border */
+
+            /* Typography */
+            --font-head: 'Cinzel', serif;
+            --font-body: 'Poppins', sans-serif;
+            --font-accent: 'Cormorant Garamond', serif;
+
+            /* UI Elements - Softer, more modern */
+            --shadow-sm: 0 8px 16px rgba(0, 0, 0, 0.03);
+            --shadow-md: 0 16px 32px rgba(0, 0, 0, 0.05);
+            --shadow-lg: 0 24px 48px rgba(0, 0, 0, 0.08);
+            --radius-md: 16px;
+            --radius-lg: 32px;
+            --radius-full: 9999px;
+            --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* ========================
+           RESET & BASE STYLES
+           ======================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: var(--font-head);
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--text-dark);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition-smooth);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: var(--text-dark);
+            margin-bottom: 16px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-header h2::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary-gold);
+        }
+
+        .section-header p {
+            font-family: var(--font-accent);
+            font-size: 1.25rem;
+            color: var(--text-light);
+            font-style: italic;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 32px;
+            border-radius: var(--radius-full);
+            font-family: var(--font-body);
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            border: none;
+            gap: 10px;
+        }
+
+        .btn-primary {
+            background-color: var(--secondary-blue);
+            color: var(--bg-white);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--secondary-blue-hover);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--bg-white);
+            border: 2px solid var(--primary-gold);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary-gold);
+            color: var(--bg-dark);
+        }
+
+        /* ========================
+           STICKY NAVBAR
+           ======================== */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 0;
+            z-index: 1000;
+            transition: var(--transition-smooth);
+            background-color: transparent;
+        }
+
+        .navbar.scrolled {
+            background-color: var(--bg-white);
+            padding: 15px 0;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .navbar-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-family: var(--font-head);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--bg-white);
+            transition: var(--transition-smooth);
+        }
+
+        .navbar.scrolled .logo {
+            color: var(--primary-maroon);
+        }
+
+        .logo i {
+            color: var(--primary-gold);
+            font-size: 1.8rem;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+
+        .nav-link {
+            font-size: 1rem;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.9);
+            position: relative;
+        }
+
+        .navbar.scrolled .nav-link {
+            color: var(--text-dark);
+        }
+
+        .nav-link:hover {
+            color: var(--primary-gold);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            font-size: 1.5rem;
+            color: var(--bg-white);
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .navbar.scrolled .mobile-menu-btn {
+            color: var(--text-dark);
+        }
+
+        /* ========================
+           HERO SECTION
+           ======================== */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, rgba(10, 15, 30, 0.97) 0%, rgba(35, 10, 15, 0.97) 100%), url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80') center/cover;
+            padding-top: 80px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            padding: 0 24px;
+        }
+
+        .hero-tagline {
+            font-family: var(--font-accent);
+            font-size: 1.5rem;
+            font-style: italic;
+            color: var(--primary-gold);
+            margin-bottom: 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 0.8s ease forwards 0.2s;
+        }
+
+        .hero-title {
+            font-size: 4.5rem;
+            color: var(--bg-white);
+            margin-bottom: 24px;
+            line-height: 1.1;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 0.8s ease forwards 0.4s;
+        }
+
+        .hero-title span {
+            color: var(--primary-gold);
+        }
+
+        .hero-description {
+            font-size: 1.125rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 0.8s ease forwards 0.6s;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 30px 0;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 0.8s ease forwards 0.8s;
+        }
+
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 16px 24px;
+            border-radius: var(--radius-md);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: var(--bg-white);
+        }
+
+        .stat-icon {
+            font-size: 1.5rem;
+            color: var(--primary-gold);
+            margin-bottom: 8px;
+        }
+
+        .stat-number {
+            font-size: 1.5rem;
+            font-weight: 700;
+            font-family: var(--font-head);
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            .hero-stats {
+                flex-direction: column;
+                gap: 16px;
+                align-items: center;
+            }
+
+            .stat-item {
+                width: 100%;
+                max-width: 250px;
+            }
+        }
+
+        .hero-cta {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 0.8s ease forwards 1s;
+        }
+
+        .hero-cta .btn-primary {
+            background-color: var(--primary-blue);
+            padding: 16px 40px;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 15px rgba(74, 144, 226, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .hero-cta .btn-primary:hover {
+            transform: scale(1.05) translateY(-3px);
+            box-shadow: 0 8px 25px rgba(74, 144, 226, 0.6);
+            background-color: #3A7CBD;
+        }
+
+        /* Floating Floral Elements / Mandalas */
+        .floating-element {
+            position: absolute;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23D4AF37" opacity="0.3"><path d="M12 2L15 8L22 9L17 14L18 21L12 17L6 21L7 14L2 9L9 8L12 2Z"/></svg>');
+            background-size: contain;
+            background-repeat: no-repeat;
+            z-index: 1;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .fe-1 {
+            top: 20%;
+            left: 10%;
+            width: 60px;
+            height: 60px;
+            animation-delay: 0s;
+        }
+
+        .fe-2 {
+            top: 30%;
+            right: 15%;
+            width: 80px;
+            height: 80px;
+            animation-delay: 1s;
+        }
+
+        .fe-3 {
+            bottom: 20%;
+            left: 20%;
+            width: 100px;
+            height: 100px;
+            animation-delay: 2s;
+        }
+
+        .fe-4 {
+            bottom: 30%;
+            right: 10%;
+            width: 50px;
+            height: 50px;
+            animation-delay: 3s;
+        }
+
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-20px) rotate(10deg);
+            }
+
+            100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+        }
+
+        /* ========================
+           FOOTER
+           ======================== */
+        .footer {
+            background-color: var(--bg-dark);
+            color: rgba(255, 255, 255, 0.8);
+            padding: 80px 0 24px;
+            font-size: 0.95rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-family: var(--font-head);
+            font-size: 1.5rem;
+            color: var(--bg-white);
+            margin-bottom: 20px;
+        }
+
+        .footer-logo i {
+            color: var(--primary-gold);
+        }
+
+        .footer-about p {
+            margin-bottom: 24px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 16px;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: var(--bg-white);
+            transition: var(--transition-smooth);
+        }
+
+        .social-link:hover {
+            background-color: var(--primary-gold);
+            color: var(--bg-dark);
+            transform: translateY(-3px);
+        }
+
+        .footer-title {
+            font-family: var(--font-head);
+            color: var(--bg-white);
+            font-size: 1.25rem;
+            margin-bottom: 24px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .footer-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            width: 40px;
+            height: 2px;
+            background-color: var(--primary-gold);
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .footer-links a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-gold);
+            padding-left: 5px;
+        }
+
+        .footer-contact li {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .footer-contact i {
+            color: var(--primary-gold);
+            font-size: 1.25rem;
+            margin-top: 4px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.875rem;
+        }
+
+        /* ========================
+           RESPONSIVE DESIGN
+           ======================== */
+        @media (max-width: 992px) {
+            .hero-title {
+                font-size: 3.5rem;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 40px;
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            .nav-links,
+            .nav-cta {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .nav-links.active {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: var(--bg-white);
+                padding: 15px 0;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                gap: 0;
+                z-index: 1000;
+            }
+
+            .nav-links.active li {
+                width: 100%;
+            }
+
+            .nav-links.active .nav-link {
+                color: var(--text-dark);
+                display: block;
+                padding: 12px 24px;
+                border-bottom: 1px solid var(--border-color);
+            }
+
+            .nav-links.active li:last-child .nav-link {
+                border-bottom: none;
+            }
+
+            .hero-title {
+                font-size: 2.75rem;
+            }
+
+            .hero-cta {
+                flex-direction: column;
+            }
+
+            .hero-cta .btn {
+                width: 100%;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ========================
+           SECTION PADDING & ANIMATIONS
+           ======================== */
+        section {
+            padding: 100px 0;
+            scroll-margin-top: 60px;
+            /* Offset for sticky header */
+        }
+
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .animate-on-scroll.animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ========================
+           SERVICES SECTION
+           ======================== */
+        .services {
+            background-color: var(--bg-white);
+            position: relative;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: var(--bg-light);
+            border-radius: var(--radius-lg);
+            padding: 40px 30px;
+            text-align: center;
+            transition: var(--transition-smooth);
+            border: 1px solid var(--border-color);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(74, 144, 226, 0.05) 0%, rgba(255, 101, 132, 0.05) 100%);
+            z-index: -1;
+            opacity: 0;
+            transition: var(--transition-smooth);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+            border-color: rgba(212, 175, 55, 0.3);
+        }
+
+        .service-card:hover::before {
+            opacity: 1;
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 24px;
+            background: linear-gradient(135deg, var(--primary-blue), var(--accent-pink));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: var(--bg-white);
+            box-shadow: var(--shadow-md);
+        }
+
+        .service-title {
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+            color: var(--text-dark);
+        }
+
+        .service-desc {
+            color: var(--text-light);
+            margin-bottom: 24px;
+            font-size: 0.95rem;
+        }
+
+        .service-price {
+            display: inline-block;
+            padding: 6px 16px;
+            background-color: rgba(255, 101, 132, 0.1);
+            color: var(--accent-pink);
+            border-radius: var(--radius-full);
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+
+        /* ========================
+           WHY CHOOSE US SECTION
+           ======================== */
+        .why-us {
+            background-color: var(--bg-light);
+            position: relative;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+
+        .feature-item {
+            display: flex;
+            gap: 20px;
+            background: var(--bg-white);
+            padding: 30px;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition-smooth);
+        }
+
+        .feature-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary-gold);
+            flex-shrink: 0;
+        }
+
+        .feature-content h4 {
+            font-size: 1.25rem;
+            margin-bottom: 8px;
+            color: var(--text-dark);
+        }
+
+        .feature-content p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* ========================
+           TESTIMONIALS SECTION
+           ======================== */
+        .testimonials {
+            background-color: var(--bg-white);
+            position: relative;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .testimonial-card {
+            background: var(--bg-light);
+            padding: 40px;
+            border-radius: var(--radius-lg);
+            position: relative;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition-smooth);
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .quote-icon {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            font-size: 3rem;
+            color: rgba(74, 144, 226, 0.15);
+        }
+
+        .stars {
+            color: var(--primary-gold);
+            margin-bottom: 16px;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            color: var(--text-dark);
+            margin-bottom: 24px;
+            font-family: var(--font-accent);
+            font-size: 1.1rem;
+        }
+
+        .client-info {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .client-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--primary-maroon);
+            color: var(--bg-white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 1.25rem;
+        }
+
+        .client-name {
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .client-event {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        /* ========================
+           ABOUT SECTION
+           ======================== */
+        .about {
+            background-color: var(--bg-light);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        @media (max-width: 992px) {
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .about-image {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .about-image img {
+            width: 100%;
+            height: auto;
+            transform: scale(1);
+            transition: transform 0.5s ease;
+        }
+
+        .about-image:hover img {
+            transform: scale(1.05);
+        }
+
+        .about-text h3 {
+            font-size: 2rem;
+            color: var(--text-dark);
+            margin-bottom: 24px;
+        }
+
+        .about-text p {
+            margin-bottom: 16px;
+            color: var(--text-dark);
+            font-size: 1.05rem;
+        }
+
+        .about-features {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .about-feature {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .about-feature i {
+            color: var(--primary-gold);
+            font-size: 1.25rem;
+        }
+
+        /* ========================
+           CONTACT SECTION
+           ======================== */
+        .contact {
+            background-color: var(--bg-white);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 50px;
+        }
+
+        @media (max-width: 992px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .contact-info-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact-info-card {
+            background: var(--bg-light);
+            padding: 30px;
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .contact-info-icon {
+            width: 50px;
+            height: 50px;
+            background-color: rgba(212, 175, 55, 0.1);
+            color: var(--primary-gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            flex-shrink: 0;
+        }
+
+        .contact-form {
+            background: var(--bg-light);
+            padding: 40px;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 14px 20px;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            font-family: var(--font-body);
+            font-size: 1rem;
+            transition: var(--transition-smooth);
+            background-color: var(--bg-white);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-gold);
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+        }
+
+        textarea.form-control {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        /* ========================
+           CTA BANNER
+           ======================== */
+        .cta-banner {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-pink) 100%);
+            padding: 80px 0;
+            text-align: center;
+            color: var(--bg-white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-banner::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23FFFFFF" opacity="0.03"><path d="M12 2L15 8L22 9L17 14L18 21L12 17L6 21L7 14L2 9L9 8L12 2Z"/></svg>');
+            background-size: 100px;
+            animation: rotate 60s linear infinite;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 1;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .cta-content h2 {
+            font-size: 2.5rem;
+            color: var(--bg-white);
+            margin-bottom: 20px;
+        }
+
+        .cta-content p {
+            font-size: 1.125rem;
+            margin-bottom: 30px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        /* ========================
+           SMART GALLERY SECTION
+           ======================== */
+        .gallery {
+            background-color: var(--bg-white);
+        }
+
+        .gallery-filters {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+
+        .filter-btn {
+            background-color: transparent;
+            border: 1px solid var(--border-color);
+            padding: 8px 24px;
+            border-radius: var(--radius-full);
+            color: var(--text-dark);
+            font-family: var(--font-body);
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background-color: var(--primary-maroon);
+            color: var(--bg-white);
+            border-color: var(--primary-maroon);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            aspect-ratio: 1;
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 24px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-overlay h4 {
+            color: var(--bg-white);
+            font-size: 1.25rem;
+            margin-bottom: 8px;
+            transform: translateY(20px);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-overlay p {
+            color: var(--primary-gold);
+            font-size: 0.9rem;
+            transform: translateY(20px);
+            transition: transform 0.3s ease 0.1s;
+        }
+
+        .gallery-item:hover .gallery-overlay h4,
+        .gallery-item:hover .gallery-overlay p {
+            transform: translateY(0);
+        }
+
+        /* ========================
+           MODALS (GALLERY & BOOKING)
+           ======================== */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            padding: 20px;
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .modal-content {
+            background-color: var(--bg-white);
+            border-radius: var(--radius-lg);
+            width: 100%;
+            max-width: 900px;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            transform: scale(0.95);
+            transition: transform 0.3s ease;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .modal-overlay.active .modal-content {
+            transform: scale(1);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 1.25rem;
+            cursor: pointer;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition-smooth);
+        }
+
+        .modal-close:hover {
+            background: var(--primary-maroon);
+        }
+
+        /* Gallery Modal Grid */
+        .gallery-modal-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-modal-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .gallery-modal-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            min-height: 300px;
+        }
+
+        .gallery-modal-info {
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            background: var(--bg-light);
+        }
+
+        .gallery-modal-title {
+            color: var(--text-dark);
+            font-size: 1.75rem;
+            margin-bottom: 8px;
+        }
+
+        .gallery-modal-meta {
+            display: flex;
+            gap: 16px;
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+        }
+
+        .gallery-modal-meta i {
+            color: var(--primary-gold);
+        }
+
+        .gallery-modal-desc {
+            color: var(--text-dark);
+            margin-bottom: 30px;
+        }
+
+        /* Comment System */
+        .comments-section {
+            margin-top: auto;
+        }
+
+        .comments-list {
+            max-height: 200px;
+            overflow-y: auto;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            padding-right: 8px;
+        }
+
+        .comment-item {
+            background: var(--bg-white);
+            padding: 12px 16px;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .comment-item h5 {
+            color: var(--secondary-blue);
+            font-size: 0.9rem;
+            margin-bottom: 4px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .comment-item h5 span {
+            color: var(--text-light);
+            font-size: 0.75rem;
+            font-weight: 400;
+        }
+
+        .comment-item p {
+            color: var(--text-dark);
+            font-size: 0.85rem;
+            margin: 0;
+        }
+
+        .comment-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .comment-form input,
+        .comment-form textarea {
+            width: 100%;
+            padding: 10px 14px;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+        }
+
+        .comment-form textarea {
+            resize: vertical;
+            min-height: 60px;
+        }
+
+        /* ========================
+           BOOKING MODAL & FLOATING CTA
+           ======================== */
+        .booking-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+        }
+
+        @media (max-width: 992px) {
+            .booking-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .booking-info {
+            background: linear-gradient(135deg, var(--primary-blue), var(--accent-pink));
+            color: var(--bg-white);
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .booking-info h3 {
+            color: var(--primary-gold);
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .booking-form-area {
+            padding: 40px;
+        }
+
+        .payment-options {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .payment-option {
+            flex: 1;
+            padding: 15px;
+            border: 2px solid var(--border-color);
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            text-align: center;
+            transition: var(--transition-smooth);
+        }
+
+        .payment-option.selected {
+            border-color: var(--primary-gold);
+            background-color: rgba(212, 175, 55, 0.05);
+        }
+
+        .price-calculation {
+            background-color: var(--bg-light);
+            padding: 20px;
+            border-radius: var(--radius-md);
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .upi-apps {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+            display: none;
+        }
+
+        .upi-btn {
+            background: var(--bg-white);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 10px 20px;
+            cursor: pointer;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition-smooth);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .upi-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .upi-btn img {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+        }
+
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: var(--shadow-lg);
+            z-index: 1000;
+            transition: var(--transition-smooth);
+        }
+
+        .floating-whatsapp:hover {
+            transform: scale(1.1);
+            color: white;
+        }
+
+        .toast {
+            position: fixed;
+            bottom: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--bg-dark);
+            color: var(--bg-white);
+            padding: 16px 32px;
+            border-radius: var(--radius-full);
+            z-index: 3000;
+            transition: bottom 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .toast.show {
+            bottom: 40px;
+        }
+
+        /* ========================
+           ADMIN PANEL & STATUS
+           ======================== */
+        .admin-panel {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: var(--bg-light);
+            z-index: 4000;
+            overflow-y: auto;
+            padding: 40px 20px;
+            display: none;
+        }
+
+        .admin-panel.active {
+            display: block;
+        }
+
+        .admin-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto 40px;
+        }
+
+        .admin-cards-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .admin-card {
+            background: var(--bg-white);
+            border-radius: var(--radius-md);
+            padding: 24px;
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-left: 5px solid transparent;
+        }
+
+        @media (max-width: 768px) {
+            .admin-card {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+            }
+        }
+
+        .admin-card-info h4 {
+            margin-bottom: 8px;
+            font-size: 1.25rem;
+            color: var(--text-dark);
+        }
+
+        .admin-card-info p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-bottom: 4px;
+        }
+
+        .admin-card-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: var(--radius-full);
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .badge-pending {
+            background-color: rgba(245, 158, 11, 0.1);
+            color: #F59E0B;
+            border: 1px solid #F59E0B;
+        }
+
+        .badge-approved {
+            background-color: rgba(16, 185, 129, 0.1);
+            color: #10B981;
+            border: 1px solid #10B981;
+        }
+
+        .badge-rejected {
+            background-color: rgba(239, 68, 68, 0.1);
+            color: #EF4444;
+            border: 1px solid #EF4444;
+        }
+
+        .status-container {
+            text-align: center;
+            padding: 30px;
+            background: rgba(74, 144, 226, 0.05);
+            border-radius: var(--radius-md);
+            margin-bottom: 30px;
+        }
+
+        .status-icon {
+            font-size: 3rem;
+            margin-bottom: 16px;
+        }
+
+        .status-container h4 {
+            font-size: 1.5rem;
+            color: var(--text-dark);
+            margin-bottom: 12px;
+        }
+
+        .status-container p {
+            color: var(--text-light);
+        }
+
+        .payment-section {
+            display: none;
+            opacity: 0;
+            transition: var(--transition-smooth);
+        }
+
+        .payment-section.active {
+            display: block;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- STICKY NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-seedling"></i>
+                Manjula
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-cta">
+                <button class="btn btn-primary" onclick="openBookingModal()"><i class="fa-solid fa-calendar-check"></i>
+                    Book Now</button>
+            </div>
+
+            <button class="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <!-- Decorative bg elements -->
+        <div class="floating-element fe-1"></div>
+        <div class="floating-element fe-2"></div>
+        <div class="floating-element fe-3"></div>
+        <div class="floating-element fe-4"></div>
+
+        <div class="hero-content">
+            <h1 class="hero-title">Elevate Your Events with <span>Premium Decor</span></h1>
+            <p class="hero-tagline" style="margin-bottom: 20px; font-size: 1.2rem; color: rgba(255,255,255,0.9);">
+                Crafting Beautiful Celebrations with Tradition & Style</p>
+
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <i class="fa-solid fa-face-smile stat-icon"></i>
+                    <span class="stat-number"><span class="count-up" data-target="1000">0</span>+</span>
+                    <span class="stat-label">Happy Customers</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fa-solid fa-calendar-check stat-icon"></i>
+                    <span class="stat-number"><span class="count-up" data-target="500">0</span>+</span>
+                    <span class="stat-label">Events Completed</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fa-solid fa-award stat-icon"></i>
+                    <span class="stat-number"><span class="count-up" data-target="15">0</span>+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+            </div>
+
+            <div class="hero-cta">
+                <button class="btn btn-primary" onclick="openBookingModal()">Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <!-- SERVICES SECTION -->
+        <section class="services" id="services">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2>Our Premium Services</h2>
+                    <p>Tailored decors for every traditional and modern celebration</p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card animate-on-scroll" style="transition-delay: 0.1s;">
+                        <div class="service-icon"><i class="fa-solid fa-ring"></i></div>
+                        <h3 class="service-title">Wedding Decor</h3>
+                        <p class="service-desc">Grand, luxurious traditional mindaps and modern stage setups designed to
+                            make your special day unforgettable.</p>
+                        <div class="service-price">From ₹25,000</div>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card animate-on-scroll" style="transition-delay: 0.2s;">
+                        <div class="service-icon"><i class="fa-solid fa-cake-candles"></i></div>
+                        <h3 class="service-title">Birthday Parties</h3>
+                        <p class="service-desc">Themed decorations with vibrant balloon arches, backdrops, and
+                            customized styling for all age groups.</p>
+                        <div class="service-price">From ₹10,000</div>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card animate-on-scroll" style="transition-delay: 0.3s;">
+                        <div class="service-icon"><i class="fa-solid fa-spa"></i></div>
+                        <h3 class="service-title">Puberty Functions</h3>
+                        <p class="service-desc">Traditional and culturally rich stage setups specific to South Indian
+                            coming-of-age ceremonies.</p>
+                        <div class="service-price">From ₹15,000</div>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="service-card animate-on-scroll" style="transition-delay: 0.4s;">
+                        <div class="service-icon"><i class="fa-solid fa-champagne-glasses"></i></div>
+                        <h3 class="service-title">Engagement</h3>
+                        <p class="service-desc">Elegant and intimate ring ceremony decor, incorporating beautiful floral
+                            arrangements and lighting.</p>
+                        <div class="service-price">From ₹18,000</div>
+                    </div>
+
+                    <!-- Service 5 -->
+                    <div class="service-card animate-on-scroll" style="transition-delay: 0.5s;">
+                        <div class="service-icon"><i class="fa-solid fa-utensils"></i></div>
+                        <h3 class="service-title">Catering Stalls</h3>
+                        <p class="service-desc">Beautifully adorned food station setups giving your guests a visually
+                            delightful dining experience.</p>
+                        <div class="service-price">From ₹8,000</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SMART GALLERY SECTION -->
+        <section class="gallery" id="gallery">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2>Our Masterpieces</h2>
+                    <p>Browse through our recent event decorations</p>
+                </div>
+
+                <div class="gallery-filters animate-on-scroll">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="wedding">Wedding</button>
+                    <button class="filter-btn" data-filter="birthday">Birthday</button>
+                    <button class="filter-btn" data-filter="engagement">Engagement</button>
+                    <button class="filter-btn" data-filter="traditional">Traditional</button>
+                </div>
+
+                <div class="gallery-grid animate-on-scroll" style="transition-delay: 0.2s;">
+                    <!-- Gallery Item 1 -->
+                    <div class="gallery-item" data-category="wedding" onclick="openGalleryModal('gallery1')">
+                        <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Royal Wedding Mandap">
+                        <div class="gallery-overlay">
+                            <h4>Royal Mandap</h4>
+                            <p>Wedding</p>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 2 -->
+                    <div class="gallery-item" data-category="birthday" onclick="openGalleryModal('gallery2')">
+                        <img src="https://images.unsplash.com/photo-1530103862676-de8892b07439?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Jungle Theme Birthday">
+                        <div class="gallery-overlay">
+                            <h4>Jungle Theme</h4>
+                            <p>Birthday</p>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 3 -->
+                    <div class="gallery-item" data-category="traditional" onclick="openGalleryModal('gallery3')">
+                        <img src="https://images.unsplash.com/photo-1582650085863-71ab0ddb7c12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Puberty Function">
+                        <div class="gallery-overlay">
+                            <h4>Floral Stage</h4>
+                            <p>Traditional</p>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 4 -->
+                    <div class="gallery-item" data-category="engagement" onclick="openGalleryModal('gallery4')">
+                        <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Ring Ceremony">
+                        <div class="gallery-overlay">
+                            <h4>Pastel Dreams</h4>
+                            <p>Engagement</p>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 5 -->
+                    <div class="gallery-item" data-category="wedding" onclick="openGalleryModal('gallery5')">
+                        <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Modern Reception">
+                        <div class="gallery-overlay">
+                            <h4>Modern Reception</h4>
+                            <p>Wedding</p>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 6 -->
+                    <div class="gallery-item" data-category="birthday" onclick="openGalleryModal('gallery6')">
+                        <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Princess Birthday">
+                        <div class="gallery-overlay">
+                            <h4>Princess Party</h4>
+                            <p>Birthday</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY CHOOSE US SECTION -->
+        <section class="why-us" id="why-us">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2>Why Choose Us</h2>
+                    <p>Excellence delivered with tradition and style</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-item animate-on-scroll" style="transition-delay: 0.1s;">
+                        <div class="feature-icon"><i class="fa-solid fa-award"></i></div>
+                        <div class="feature-content">
+                            <h4>Premium Quality</h4>
+                            <p>We source only the finest materials, natural flowers, and luxury drapes for an impeccable
+                                finish.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item animate-on-scroll" style="transition-delay: 0.2s;">
+                        <div class="feature-icon"><i class="fa-solid fa-om"></i></div>
+                        <div class="feature-content">
+                            <h4>Culturally Rooted</h4>
+                            <p>Our designs deeply respect and showcase rich South Indian traditions with modern flair.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item animate-on-scroll" style="transition-delay: 0.3s;">
+                        <div class="feature-icon"><i class="fa-solid fa-wallet"></i></div>
+                        <div class="feature-content">
+                            <h4>Transparent Pricing</h4>
+                            <p>No hidden costs. We provide clear, itemized quotes tailored to your budget and needs.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item animate-on-scroll" style="transition-delay: 0.4s;">
+                        <div class="feature-icon"><i class="fa-solid fa-clock"></i></div>
+                        <div class="feature-content">
+                            <h4>Punctual Execution</h4>
+                            <p>Our expert team ensures your venue is decorated and ready well before your events
+                                commence.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item animate-on-scroll" style="transition-delay: 0.5s;">
+                        <div class="feature-icon"><i class="fa-solid fa-paintbrush"></i></div>
+                        <div class="feature-content">
+                            <h4>Custom Designs</h4>
+                            <p>We work closely with you to create personalized themes that match your unique vision.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item animate-on-scroll" style="transition-delay: 0.6s;">
+                        <div class="feature-icon"><i class="fa-solid fa-headset"></i></div>
+                        <div class="feature-content">
+                            <h4>Dedicated Support</h4>
+                            <p>From booking to event day, our team is always available to answer queries and assist.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS SECTION -->
+        <section class="testimonials" id="testimonials">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2>Client Experiences</h2>
+                    <p>What our clients say about our services</p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card animate-on-scroll" style="transition-delay: 0.1s;">
+                        <i class="fa-solid fa-quote-right quote-icon"></i>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The wedding decor was beyond our imagination! The traditional
+                            mandap beautifully merged with modern lighting. Highly recommend Manjula Decorations for any
+                            grand event."</p>
+                        <div class="client-info">
+                            <div class="client-avatar">K</div>
+                            <div>
+                                <div class="client-name">Karthik & Sandhya</div>
+                                <div class="client-event">Wedding Reception</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card animate-on-scroll" style="transition-delay: 0.2s;">
+                        <i class="fa-solid fa-quote-right quote-icon"></i>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"They handled my daughter's puberty function decor flawlessly. The
+                            attention to cultural details was amazing. It felt incredibly premium within our budget."
+                        </p>
+                        <div class="client-info">
+                            <div class="client-avatar">R</div>
+                            <div>
+                                <div class="client-name">Ramesh Kumar</div>
+                                <div class="client-event">Puberty Function</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card animate-on-scroll" style="transition-delay: 0.3s;">
+                        <i class="fa-solid fa-quote-right quote-icon"></i>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <p class="testimonial-text">"Booked them for my son's 1st birthday. The jungle theme was
+                            executed perfectly with beautiful balloon setups and photo booths. Very professional team."
+                        </p>
+                        <div class="client-info">
+                            <div class="client-avatar">P</div>
+                            <div>
+                                <div class="client-name">Priya Natarajan</div>
+                                <div class="client-event">First Birthday</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-image animate-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1543360255-b46eb0c210d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                            alt="Beautiful South Indian Wedding Decor">
+                    </div>
+                    <div class="about-text animate-on-scroll" style="transition-delay: 0.2s;">
+                        <h3>Crafting Memories Since Inception</h3>
+                        <p>Manjula Decorations began with a simple passion: to bring the rich, vibrant essence of South
+                            Indian traditions into life's greatest celebrations.</p>
+                        <p>Based near the Collector Office in Tirupattur, we have transformed countless venues into
+                            breathtaking, memorable spaces over the years. We blend traditional aesthetics, like
+                            marigold garlands and temple-style mandaps, with modern, luxurious lighting and structural
+                            elegance.</p>
+
+                        <div class="about-features">
+                            <div class="about-feature">
+                                <i class="fa-solid fa-check-circle"></i>
+                                <span>Expert Craftsmanship</span>
+                            </div>
+                            <div class="about-feature">
+                                <i class="fa-solid fa-check-circle"></i>
+                                <span>Timely Setup</span>
+                            </div>
+                            <div class="about-feature">
+                                <i class="fa-solid fa-check-circle"></i>
+                                <span>100+ Events Hosted</span>
+                            </div>
+                            <div class="about-feature">
+                                <i class="fa-solid fa-check-circle"></i>
+                                <span>Budget Friendly</span>
+                            </div>
+                        </div>
+                        <br>
+                        <button class="btn btn-primary" onclick="openBookingModal()">Start Planning With Us</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2>Get In Touch</h2>
+                    <p>Let's discuss how we can make your event spectacular</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info-cards animate-on-scroll">
+                        <div class="contact-info-card">
+                            <div class="contact-info-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <h4>Call / WhatsApp</h4>
+                                <p>+91 9245233940</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-card">
+                            <div class="contact-info-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <h4>Email Address</h4>
+                                <p>manjuladecorations@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-card">
+                            <div class="contact-info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Near Collector Office, <br>Tirupattur, Tamil Nadu</p>
+                            </div>
+                        </div>
+                        <!-- Empty map placeholder -->
+                        <div
+                            style="width: 100%; height: 200px; background-color: #e5e5e5; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; color: #888;">
+                            <i class="fa-solid fa-map" style="font-size: 2rem; margin-right: 10px;"></i> Map Integration
+                            Placeholder
+                        </div>
+                    </div>
+
+                    <div class="contact-form animate-on-scroll" style="transition-delay: 0.2s;">
+                        <h3 style="color: var(--text-dark); margin-bottom: 24px; font-size: 1.5rem;">Send a Message</h3>
+                        <form onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" class="form-control" placeholder="Phone Number" required>
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control" required>
+                                    <option value="" disabled selected>Select Event Type</option>
+                                    <option value="wedding">Wedding</option>
+                                    <option value="birthday">Birthday</option>
+                                    <option value="puberty">Puberty Function</option>
+                                    <option value="engagement">Engagement</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control"
+                                    placeholder="Your requirements or questions..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA BANNER -->
+        <section class="cta-banner">
+            <div class="container cta-content animate-on-scroll">
+                <h2>Ready to Make Your Celebration Unforgettable?</h2>
+                <p>Book Manjula Decorations today and let us transform your venue into a dreamlike setting with our
+                    traditional and modern decor fusions.</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary" onclick="openBookingModal()"
+                        style="background-color: var(--primary-gold); color: var(--bg-dark);">Book Your Date</button>
+                    <a href="https://wa.me/1234567890" target="_blank" class="btn btn-outline">WhatsApp Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Next Sections Placeholder -->
+    </main>
+
+    <!-- GALLERY MODAL -->
+    <div class="modal-overlay" id="galleryModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeGalleryModal()"><i class="fa-solid fa-times"></i></button>
+            <div class="gallery-modal-grid">
+                <img src="" alt="Gallery Image" class="gallery-modal-img" id="modalImg">
+                <div class="gallery-modal-info">
+                    <h3 class="gallery-modal-title" id="modalTitle">Title</h3>
+                    <div class="gallery-modal-meta">
+                        <span id="modalType"><i class="fa-solid fa-tag"></i> Type</span>
+                        <span id="modalLoc"><i class="fa-solid fa-location-dot"></i> Location</span>
+                        <span id="modalDate"><i class="fa-regular fa-calendar"></i> Date</span>
+                    </div>
+                    <p class="gallery-modal-desc" id="modalDesc">Description goes here.</p>
+
+                    <!-- Comment System -->
+                    <div class="comments-section">
+                        <h4 style="margin-bottom: 12px; color: var(--text-dark);">Client Feedback</h4>
+                        <div class="comments-list" id="commentsList">
+                            <!-- Comments will be populated here via JS -->
+                        </div>
+                        <form class="comment-form" id="commentForm" onsubmit="submitComment(event)">
+                            <input type="text" id="commentName" placeholder="Your Name" required>
+                            <textarea id="commentText" placeholder="Leave your thoughts on this decor..."
+                                required></textarea>
+                            <button type="submit" class="btn btn-primary" style="padding: 10px;">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOOKING & PAYMENT MODAL -->
+    <div class="modal-overlay" id="bookingModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeBookingModal()"><i class="fa-solid fa-times"></i></button>
+            <div class="booking-grid">
+                <div class="booking-info">
+                    <h3>Secure Your Date</h3>
+                    <p style="margin-bottom: 30px; opacity: 0.9;">Book our premium decoration services today. Pay full
+                        or secure with just a 30% advance via UPI.</p>
+
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 15px;">
+                        <li><i class="fa-solid fa-check" style="color: var(--primary-gold); margin-right: 10px;"></i>
+                            Instant Booking Confirmation</li>
+                        <li><i class="fa-solid fa-check" style="color: var(--primary-gold); margin-right: 10px;"></i>
+                            Secure UPI Payments</li>
+                        <li><i class="fa-solid fa-check" style="color: var(--primary-gold); margin-right: 10px;"></i>
+                            Transparent Pricing</li>
+                    </ul>
+                </div>
+
+                <div class="booking-form-area">
+                    <h4 style="font-size: 1.5rem; color: var(--text-dark); margin-bottom: 24px;">Booking Details</h4>
+
+                    <!-- NEW FORM SECTION: Visible only initially -->
+                    <form id="bookingReqForm" onsubmit="submitBooking(event)">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="b-name" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" id="b-phone" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group" style="display: flex; gap: 15px;">
+                            <select class="form-control" id="b-event" required>
+                                <option value="" disabled selected>Event Type</option>
+                                <option value="Wedding">Wedding</option>
+                                <option value="Birthday">Birthday</option>
+                                <option value="Puberty">Puberty Function</option>
+                                <option value="Engagement">Engagement</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <input type="date" class="form-control" id="b-date" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="b-budget"
+                                placeholder="Estimated Total Budget (₹)" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Request</button>
+                    </form>
+
+                    <!-- STATUS & PAYMENT SECTION: Visible after form submitted -->
+                    <div id="bookingStatusArea" style="display: none;">
+                        <div class="status-container" id="statusMessageContainer">
+                            <!-- Populated via JS -->
+                        </div>
+
+                        <!-- PAYMENT OPTIONS -->
+                        <div class="payment-section" id="paymentSection">
+                            <div class="payment-options">
+                                <div class="payment-option selected" id="opt-full" onclick="selectPaymentMode('full')">
+                                    <strong>Full Payment</strong>
+                                    <p style="font-size: 0.85rem; color: var(--text-light);">100% upfront</p>
+                                </div>
+                                <div class="payment-option" id="opt-adv" onclick="selectPaymentMode('adv')">
+                                    <strong>Advance</strong>
+                                    <p style="font-size: 0.85rem; color: var(--text-light);">30% to secure date</p>
+                                </div>
+                            </div>
+
+                            <div class="price-calculation">
+                                Amount to Pay: <span id="amount-display"
+                                    style="color: var(--primary-blue); font-size: 1.25rem;">₹ 0</span>
+                            </div>
+
+                            <button type="button" class="btn btn-primary" style="width: 100%;" id="pay-btn"
+                                onclick="proceedToPay()">Proceed to Pay</button>
+
+                            <div class="upi-apps" id="upi-apps">
+                                <button type="button" class="upi-btn" onclick="simulatePayment()"><i
+                                        class="fa-brands fa-google-pay" style="color: #4285F4; font-size: 1.5rem;"></i>
+                                    GPay</button>
+                                <button type="button" class="upi-btn" onclick="simulatePayment()"><i
+                                        class="fa-solid fa-building-columns"
+                                        style="color: #5f259f; font-size: 1.5rem;"></i> PhonePe</button>
+                                <button type="button" class="upi-btn" onclick="simulatePayment()"><i
+                                        class="fa-solid fa-qrcode"></i> QR Code</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FLOATING WHATSAPP -->
+    <a href="https://wa.me/919245233940" target="_blank" class="floating-whatsapp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- TOAST NOTIFICATION -->
+    <div class="toast" id="toast">
+        <i class="fa-solid fa-circle-check" style="color: #25D366; font-size: 1.5rem;"></i>
+        <span id="toast-msg">Payment Successful!</span>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="#" class="footer-logo">
+                        <i class="fa-solid fa-seedling"></i>
+                        Manjula Decorations
+                    </a>
+                    <p>Blending traditional South Indian aesthetics with modern premium UI to create unforgettable
+                        celebratory spaces for your special moments.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="#home"><i class="fa-solid fa-chevron-right" style="font-size: 0.75rem;"></i> Home</a>
+                        <a href="#services"><i class="fa-solid fa-chevron-right" style="font-size: 0.75rem;"></i>
+                            Services</a>
+                        <a href="#gallery"><i class="fa-solid fa-chevron-right" style="font-size: 0.75rem;"></i>
+                            Gallery</a>
+                        <a href="#about"><i class="fa-solid fa-chevron-right" style="font-size: 0.75rem;"></i> About
+                            Us</a>
+                        <a href="#contact"><i class="fa-solid fa-chevron-right" style="font-size: 0.75rem;"></i>
+                            Contact</a>
+                        <a href="#" onclick="toggleAdminPanel(event)"><i class="fa-solid fa-lock"
+                                style="font-size: 0.75rem;"></i> Owner Portal</a>
+                    </div>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4 class="footer-title">Services</h4>
+                    <div class="footer-links">
+                        <a href="#"><i class="fa-solid fa-chevron-right" style="font-size: 0.75rem;"></i> Wedding
+                            Decor</a>
+                        <a href="#"><i class="fa-solid fa-chevron-right" style="font-size: 0.75rem;"></i> Birthday
+                            Parties</a>
+                        <a href="#"><i class="fa-solid fa-chevron-right" style="font-size: 0.75rem;"></i> Puberty
+                            Functions</a>
+                        <a href="#"><i class="fa-solid fa-chevron-right" style="font-size: 0.75rem;"></i>
+                            Engagements</a>
+                        <a href="#"><i class="fa-solid fa-chevron-right" style="font-size: 0.75rem;"></i> Catering Stall
+                            Setup</a>
+                    </div>
+                </div>
+
+                <div class="footer-contact">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Near Collector Office, Tirupattur, Tamil Nadu</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:+919245233940">+91 9245233940</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:manjuladecorations@gmail.com">manjuladecorations@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                &copy; 2026 Manjula Decorations. All Rights Reserved. Crafted with <i class="fa-solid fa-heart"
+                    style="color: var(--accent-pink);"></i>.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ADMIN PANEL -->
+    <div class="admin-panel" id="adminPanel">
+        <div class="admin-header">
+            <h2 style="color: var(--primary-blue); display: flex; align-items: center; gap: 10px;">
+                <i class="fa-solid fa-shield-halved"></i> Owner Portal
+            </h2>
+            <button class="btn btn-outline" style="border-color: var(--border-color); color: var(--text-dark);"
+                onclick="toggleAdminPanel()"><i class="fa-solid fa-arrow-left"></i> Back to Site</button>
+        </div>
+        <div class="admin-cards-container" id="adminBookingCards">
+            <!-- Populated via JS -->
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // --- Navbar Scroll Effect ---
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // --- Viewport & Number Count-Up Animation (Intersection Observer) ---
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+        };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        function observeElements() {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            elements.forEach(el => observer.observe(el));
+        }
+
+        // Number Count Up Function
+        function startCountUp() {
+            const counters = document.querySelectorAll('.count-up');
+            const speed = 200;
+
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const count = +counter.innerText;
+                    const inc = target / speed;
+
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + inc);
+                        setTimeout(updateCount, 15);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+                updateCount();
+            });
+        }
+
+        // Observer for Hero Stats specifically to trigger count up
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    startCountUp();
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            observeElements();
+
+            const heroStats = document.querySelector('.hero-stats');
+            if (heroStats) statsObserver.observe(heroStats);
+
+            // --- Mobile Menu Toggle ---
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const navLinks = document.querySelector('.nav-links');
+
+            if (mobileMenuBtn && navLinks) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                    const icon = mobileMenuBtn.querySelector('i');
+                    if (navLinks.classList.contains('active')) {
+                        icon.classList.remove('fa-bars');
+                        icon.classList.add('fa-xmark');
+                    } else {
+                        icon.classList.remove('fa-xmark');
+                        icon.classList.add('fa-bars');
+                    }
+                });
+
+                // Close menu when a link is clicked
+                const menuLinks = navLinks.querySelectorAll('.nav-link');
+                menuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        navLinks.classList.remove('active');
+                        const icon = mobileMenuBtn.querySelector('i');
+                        icon.classList.remove('fa-xmark');
+                        icon.classList.add('fa-bars');
+                    });
+                });
+            }
+        });
+
+        // --- Gallery Filtering ---
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                galleryItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // --- Gallery Modal & Comments Data ---
+        const galleryData = {
+            'gallery1': {
+                img: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+                title: 'Royal Mandap', type: 'Wedding', loc: 'Tirupattur', date: 'Oct 2025', desc: 'A traditional South Indian mandap adorned with exotic marigolds, imported orchids, and divine mood lighting.'
+            },
+            'gallery2': {
+                img: 'https://images.unsplash.com/photo-1530103862676-de8892b07439?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+                title: 'Jungle Theme', type: 'Birthday', loc: 'Vaniyambadi', date: 'Nov 2025', desc: 'A fun and vibrant jungle-themed birthday setup featuring customized backdrops, animal cutouts, and balloon garlands.'
+            },
+            'gallery3': {
+                img: 'https://images.unsplash.com/photo-1582650085863-71ab0ddb7c12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+                title: 'Floral Stage', type: 'Traditional', loc: 'Jolarpettai', date: 'Dec 2025', desc: 'A rich stage for a puberty function decorated with fresh jasmine and rose drapery giving an authentic cultural feel.'
+            },
+            'gallery4': {
+                img: 'https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+                title: 'Pastel Dreams', type: 'Engagement', loc: 'Tirupattur', date: 'Jan 2026', desc: 'An elegant intimate ring ceremony featuring pastel carnations, soft fairy lights, and personalized neon signage.'
+            },
+            'gallery5': {
+                img: 'https://images.unsplash.com/photo-1606800052052-a08af7148866?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+                title: 'Modern Reception', type: 'Wedding', loc: 'Ambur', date: 'Feb 2026', desc: 'A contemporary reception stage with geometric metallic structures, pampas grass, and warm white spotlights.'
+            },
+            'gallery6': {
+                img: 'https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+                title: 'Princess Party', type: 'Birthday', loc: 'Tirupattur', date: 'Mar 2026', desc: 'A pink fairy tale setup with castle arches, crown table centerpieces, and premium draping.'
+            }
+        };
+
+        let currentGalleryId = null;
+
+        function openGalleryModal(id) {
+            currentGalleryId = id;
+            const data = galleryData[id];
+
+            document.getElementById('modalImg').src = data.img;
+            document.getElementById('modalTitle').textContent = data.title;
+            document.getElementById('modalType').innerHTML = `<i class="fa-solid fa-tag"></i> ${data.type}`;
+            document.getElementById('modalLoc').innerHTML = `<i class="fa-solid fa-location-dot"></i> ${data.loc}`;
+            document.getElementById('modalDate').innerHTML = `<i class="fa-regular fa-calendar"></i> ${data.date}`;
+            document.getElementById('modalDesc').textContent = data.desc;
+
+            loadComments(id);
+            document.getElementById('galleryModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeGalleryModal() {
+            document.getElementById('galleryModal').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function loadComments(id) {
+            const commentsList = document.getElementById('commentsList');
+            commentsList.innerHTML = '';
+
+            const comments = JSON.parse(localStorage.getItem(`comments_${id}`) || '[]');
+
+            if (comments.length === 0) {
+                commentsList.innerHTML = '<p style="color: #888; text-align: center; padding: 20px 0;">No comments yet. Be the first!</p>';
+                return;
+            }
+
+            comments.forEach(c => {
+                const commentEl = document.createElement('div');
+                commentEl.className = 'comment-item';
+                commentEl.innerHTML = `
+                    <h5>${c.name} <span>${c.date}</span></h5>
+                    <p>${c.text}</p>
+                `;
+                commentsList.appendChild(commentEl);
+            });
+        }
+
+        function submitComment(e) {
+            e.preventDefault();
+            if (!currentGalleryId) return;
+
+            const nameInput = document.getElementById('commentName');
+            const textInput = document.getElementById('commentText');
+
+            const newComment = {
+                name: nameInput.value,
+                text: textInput.value,
+                date: new Date().toLocaleDateString()
+            };
+
+            const comments = JSON.parse(localStorage.getItem(`comments_${currentGalleryId}`) || '[]');
+            comments.push(newComment);
+            localStorage.setItem(`comments_${currentGalleryId}`, JSON.stringify(comments));
+
+            nameInput.value = '';
+            textInput.value = '';
+
+            loadComments(currentGalleryId);
+        }
+
+        // --- Booking, Approval, Payment System ---
+        let paymentMode = 'full';
+        let calculatedAmount = 0;
+        let activeBooking = null;
+
+        function loadActiveBooking() {
+            const saved = localStorage.getItem('activeBooking');
+            if (saved) activeBooking = JSON.parse(saved);
+        }
+
+        function saveActiveBooking() {
+            if (activeBooking) {
+                localStorage.setItem('activeBooking', JSON.stringify(activeBooking));
+            } else {
+                localStorage.removeItem('activeBooking');
+            }
+        }
+
+        function getAllAdminBookings() {
+            return JSON.parse(localStorage.getItem('allBookings')) || [];
+        }
+
+        function saveAllAdminBookings(bookings) {
+            localStorage.setItem('allBookings', JSON.stringify(bookings));
+        }
+
+        function openBookingModal() {
+            document.getElementById('bookingModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+
+            loadActiveBooking();
+            renderUserBookingStatus();
+        }
+
+        function closeBookingModal() {
+            document.getElementById('bookingModal').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function renderUserBookingStatus() {
+            const formObj = document.getElementById('bookingReqForm');
+            const statusArea = document.getElementById('bookingStatusArea');
+            const msgContainer = document.getElementById('statusMessageContainer');
+            const paymentSec = document.getElementById('paymentSection');
+
+            document.getElementById('upi-apps').style.display = 'none';
+            document.getElementById('pay-btn').style.display = 'block';
+
+            // Also double check against admin bookings to sync if we approved in same browser
+            if (activeBooking) {
+                const allAdmin = getAllAdminBookings();
+                const matched = allAdmin.find(b => b.id === activeBooking.id);
+                if (matched) {
+                    activeBooking.status = matched.status;
+                    saveActiveBooking();
+                }
+            }
+
+            if (!activeBooking) {
+                formObj.style.display = 'block';
+                statusArea.style.display = 'none';
+                formObj.reset();
+            } else {
+                formObj.style.display = 'none';
+                statusArea.style.display = 'block';
+                paymentSec.classList.remove('active');
+
+                if (activeBooking.status === 'Pending') {
+                    msgContainer.innerHTML = `
+                        <div class="status-icon" style="color: #F59E0B;"><i class="fa-solid fa-lock"></i></div>
+                        <h4>Approval Pending</h4>
+                        <p>Your request has been submitted. Payment is locked until owner confirmation.</p>
+                        <button class="btn btn-outline" style="margin-top: 20px; border-color: #E2E8F0; color: var(--text-dark);" onclick="cancelBooking()">Cancel Request</button>
+                    `;
+                } else if (activeBooking.status === 'Approved') {
+                    msgContainer.innerHTML = `
+                        <div class="status-icon" style="color: #10B981;"><i class="fa-solid fa-check-circle"></i></div>
+                        <h4>Booking Confirmed</h4>
+                        <p>Your dates are locked in! You can proceed with payment.</p>
+                    `;
+                    paymentSec.classList.add('active');
+                    calculatePayment();
+                    selectPaymentMode('full');
+                } else if (activeBooking.status === 'Rejected') {
+                    msgContainer.innerHTML = `
+                        <div class="status-icon" style="color: #EF4444;"><i class="fa-solid fa-circle-xmark"></i></div>
+                        <h4>Request Declined</h4>
+                        <p>Selected date is unavailable or budget mismatch. Please choose another date.</p>
+                        <button class="btn btn-primary" style="margin-top: 20px;" onclick="cancelBooking()">Start New Booking</button>
+                    `;
+                }
+            }
+        }
+
+        function submitBooking(e) {
+            e.preventDefault();
+
+            const newBooking = {
+                id: 'BKG-' + Math.floor(Math.random() * 10000),
+                name: document.getElementById('b-name').value,
+                phone: document.getElementById('b-phone').value,
+                event: document.getElementById('b-event').value,
+                date: document.getElementById('b-date').value,
+                budget: document.getElementById('b-budget').value,
+                status: 'Pending',
+                timestamp: new Date().toISOString()
+            };
+
+            activeBooking = newBooking;
+            saveActiveBooking();
+
+            let all = getAllAdminBookings();
+            all.push(newBooking);
+            saveAllAdminBookings(all);
+
+            showToast('Booking submitted for owner approval!');
+            renderUserBookingStatus();
+        }
+
+        function cancelBooking() {
+            activeBooking = null;
+            saveActiveBooking();
+            renderUserBookingStatus();
+        }
+
+        function selectPaymentMode(mode) {
+            paymentMode = mode;
+            document.getElementById('opt-full').classList.remove('selected');
+            document.getElementById('opt-adv').classList.remove('selected');
+
+            document.getElementById(`opt-${mode}`).classList.add('selected');
+            calculatePayment();
+        }
+
+        function calculatePayment() {
+            if (!activeBooking) return;
+            const budget = parseFloat(activeBooking.budget) || 0;
+
+            if (paymentMode === 'full') {
+                calculatedAmount = budget;
+            } else {
+                calculatedAmount = budget * 0.3; // 30% advance
+            }
+
+            document.getElementById('amount-display').textContent = '₹ ' + Math.ceil(calculatedAmount).toLocaleString('en-IN');
+        }
+
+        function proceedToPay() {
+            if (calculatedAmount <= 0) return;
+            document.getElementById('pay-btn').style.display = 'none';
+            document.getElementById('upi-apps').style.display = 'flex';
+        }
+
+        function simulatePayment() {
+            closeBookingModal();
+            activeBooking = null;
+            saveActiveBooking();
+            showToast('Payment Successful! Thank you.');
+        }
+
+        // --- Simulated Admin Portal ---
+        function toggleAdminPanel(e) {
+            if (e) e.preventDefault();
+            const panel = document.getElementById('adminPanel');
+            panel.classList.toggle('active');
+
+            if (panel.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+                renderAdminBookings();
+            } else {
+                document.body.style.overflow = '';
+                loadActiveBooking();
+            }
+        }
+
+        function renderAdminBookings() {
+            const container = document.getElementById('adminBookingCards');
+            const all = getAllAdminBookings();
+
+            if (all.length === 0) {
+                container.innerHTML = `<p style="text-align: center; color: var(--text-light); padding: 40px;">No booking requests found.</p>`;
+                return;
+            }
+
+            container.innerHTML = all.map(b => {
+                let badgeClass = 'badge-pending';
+                if (b.status === 'Approved') badgeClass = 'badge-approved';
+                if (b.status === 'Rejected') badgeClass = 'badge-rejected';
+
+                let actionDocs = '';
+                if (b.status === 'Pending') {
+                    actionDocs = `
+                        <button class="btn btn-primary" style="padding: 8px 16px; background: #10B981; border: none;" onclick="updateAdminStatus('${b.id}', 'Approved')">Accept</button>
+                        <button class="btn btn-outline" style="padding: 8px 16px; border-color: #EF4444; color: #EF4444;" onclick="updateAdminStatus('${b.id}', 'Rejected')">Reject</button>
+                    `;
+                }
+
+                return `
+                <div class="admin-card">
+                    <div class="admin-card-info">
+                        <h4>${b.name} <span class="badge ${badgeClass}" style="margin-left: 10px;">${b.status}</span></h4>
+                        <p><strong><i class="fa-solid fa-bookmark" style="color: var(--primary-gold);"></i> Event:</strong> ${b.event} <span style="margin: 0 10px;">|</span> <strong><i class="fa-regular fa-calendar" style="color: var(--primary-gold);"></i> Date:</strong> ${b.date}</p>
+                        <p><strong><i class="fa-solid fa-wallet" style="color: var(--primary-gold);"></i> Budget:</strong> ₹${parseInt(b.budget).toLocaleString('en-IN')} <span style="margin: 0 10px;">|</span> <strong><i class="fa-solid fa-phone" style="color: var(--primary-gold);"></i></strong> ${b.phone}</p>
+                    </div>
+                    <div class="admin-card-actions">
+                        ${actionDocs}
+                    </div>
+                </div>`;
+            }).reverse().join('');
+        }
+
+        function updateAdminStatus(id, newStatus) {
+            let all = getAllAdminBookings();
+            let idx = all.findIndex(x => x.id === id);
+            if (idx > -1) {
+                all[idx].status = newStatus;
+                saveAllAdminBookings(all);
+
+                if (activeBooking && activeBooking.id === id) {
+                    activeBooking.status = newStatus;
+                    saveActiveBooking();
+                }
+
+                showToast(`Booking ${newStatus}!`);
+                renderAdminBookings();
+            }
+        }
+
+        // --- Toast Notification ---
+        function showToast(message, isError = false) {
+            const toast = document.getElementById('toast');
+            const toastMsg = document.getElementById('toast-msg');
+            const icon = toast.querySelector('i');
+
+            toastMsg.textContent = message;
+
+            if (isError) {
+                icon.className = 'fa-solid fa-circle-exclamation';
+                icon.style.color = '#EF4444';
+            } else {
+                icon.className = 'fa-solid fa-circle-check';
+                icon.style.color = '#25D366';
+            }
+
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+        }
+    </script>
+</body>
+
+</html>
